@@ -1,0 +1,45 @@
+body {
+    // background: rgba(1, 4, 32, 0.794);
+
+    
+    .container {
+        margin: 5% 5%;
+        border: 5px double white;
+        border-width: 2px 0px;
+        height: 0px;
+        width: 60%;
+        opacity: 0;
+        
+
+
+    }
+
+    .name {
+        opacity: 0;
+        color: white;
+    }
+}
+
+.open {
+    -webkit-transition: 1.5s;
+    transition: .5s;
+    padding: 20px 0;
+    border: 5px double white;
+    margin: 0 auto; 
+    border-width: 2px 0px;
+    height: 85px;
+    width: 60%;
+   
+
+
+    .name {
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s;
+        -webkit-transition-delay: .5s;
+                transition-delay: .5s;
+        opacity: 1;
+        color: white;
+
+    }
+}
+
