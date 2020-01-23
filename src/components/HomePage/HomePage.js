@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './HomePage.scss';
-
+import Nav from '../Nav/Nav'
 
 const HomePage = () =>
 {
@@ -20,7 +20,7 @@ const HomePage = () =>
     return (
         <div className={ classname }>
             <h1 className='name'>Wais Almakaleh</h1>
-            
+            <Nav/>
         </div>
     );
 

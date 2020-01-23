@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Intro.scss'
 import {FaXing} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
-
+import Nav from '../Nav/Nav'
 const Intro = () => {
 
     const [intro, setIntro] = useState('intro');
@@ -13,13 +13,13 @@ const Intro = () => {
         setTimeout(() => {
         setIntro('introNxt')
         }, 500);
-
+        
     })
-    
-
+  
     return(
         <div className={intro}>
-            <Link to='/'>
+            <Nav/>
+            <Link  to='/'>
                 <FaXing className='icon'/>
             </Link>
             <h1>Hello! I'm Wais</h1>

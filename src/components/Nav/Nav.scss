@@ -1,4 +1,6 @@
-.nav nav {
+.nav{
+
+        nav {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -6,16 +8,19 @@
             flex-direction: row;
     justify-content: space-around;
     color: white;
-    padding: 5% 20%;
+    padding: 5% 0;
     font-size: 1rem;
     opacity: 0;
+        }
+        
 }
 
-.classNameAfter nav {
+.classNameAfter{
+        nav {
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -23,12 +28,15 @@
             flex-direction: row;
     justify-content: space-around;
     color: white;
-    padding: 5% 20%;
+    padding: 5% 0;
     font-size: 1rem;
     opacity: 1;
     a{
     text-decoration: none;
     color: white;
-    }
-    
+    }}
 }
+
+
+
+

@@ -5,6 +5,10 @@ const Nav = () => {
 
 const [classname, setClass] = useState('nav');
 
+    const onClick = () => {
+
+        setClass('navNext')
+    }
     
     useEffect(() => {
        setTimeout(() => {
@@ -15,7 +19,7 @@ const [classname, setClass] = useState('nav');
     return(
         <div className={classname}>
             <nav>
-                <Link to='/Intro'>
+                <Link to='/Intro' >
                     INTRO
                 </Link>
                 <Link to='/'>
