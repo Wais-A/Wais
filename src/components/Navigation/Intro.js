@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './Intro.scss';
-import { FaXing } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import Nav from '../Nav/Nav';
+
+import './styles/Intro.scss'
 const Intro = () =>
 {
 
@@ -23,11 +24,11 @@ const Intro = () =>
         <div className={ intro }>
             <Nav />
             <Link to='/'>
-                <FaXing className='icon' />
+                <AiOutlineClose className='icon' />
             </Link>
             <div className='introInfo'>
-                <h1>Hello! I'm Wais</h1>
-                <h3>I'm a Full Stack Web Developer</h3>
+                <h1>{ "Hello! I'm Wais" }</h1>
+                <h3>{ "I'm a Full Stack Web Developer" }</h3>
                 <h4>My skill as follows</h4>
                 <ul className='list skills'>
                     <li>HTML</li>

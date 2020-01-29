@@ -1,22 +1,28 @@
 body {
     // background: rgba(1, 4, 32, 0.794);
 
-    
+
     .container {
         margin: 5% 5%;
         border: 5px double white;
         border-width: 2px 0px;
         height: 0px;
-        width: 60%;
+        width: 100%;
         opacity: 0;
-        
-
-
+        padding: 0;
+        margin-top: 30px;
     }
 
     .name {
         opacity: 0;
         color: white;
+    }
+
+    .App {
+        background: rgba(255, 255, 255, 0);
+        width: 70%;
+        margin: 0 auto;
+
     }
 }
 
@@ -24,22 +30,43 @@ body {
     -webkit-transition: 1.5s;
     transition: .5s;
     padding: 20px 0;
-    border: 5px double white;
-    margin: 0 auto; 
+    border: 5px solid white;
+    margin: 0 auto;
     border-width: 2px 0px;
     height: 85px;
-    width: 60%;
-   
+    width: 100%;
+
 
 
     .name {
-        -webkit-transition-duration: 1s;
-                transition-duration: 1s;
-        -webkit-transition-delay: .5s;
-                transition-delay: .5s;
+        -webkit-transition-duration: .5s;
+        transition-duration: .5s;
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
         opacity: 1;
         color: white;
 
     }
+}
+
+body {
+    background: black;
+    // background: rgb(0, 0, 0);
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2020/01/08/paint-liquid-abstract--k-wallpaper.jpg);
+    height: 100vh;
+    padding-top: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // https: //free4kwallpapers.com/uploads/originals/2020/01/08/paint-liquid-abstract--k-wallpaper.jpg
+    background-attachment: fixed;
+
+.App {
+    background: rgba(20, 2, 2, 0.376);
+    width: 70%;
+    margin: 0 auto;
+
+}
+
 }
 

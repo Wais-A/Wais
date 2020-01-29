@@ -1,4 +1,4 @@
-.intro {
+.About {
     color: white;
     background-color: rgba(255, 255, 255, 0.048);
     visibility: hidden;
@@ -44,16 +44,17 @@
 
 
 
-.introNxt {
+.AboutNxt {
     opacity: 1;
-    transition-duration: 3s;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
     color: white;
     background-color: rgba(255, 255, 255, 0.048);
     height: 100%;
     visibility: visible;
 
 
-    .introInfo {
+    .AboutInfo {
         height: 100%;
         padding-top: 5%;
     }

@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import './Nav.scss';
 const Nav = () =>
 {
+    const history = useHistory()
+    const location = useLocation()
+    function delay (URL) {
+    setTimeout( function() { window.location = URL }, 500 );
+}
+console.log( location.pathname)
+
+
 
     const [ classname, setClass ] = useState( 'nav' );
+    const [ classExit, setClassExit ] = useState(false );
 
-    const onClick = () =>
-    {
-
-        setClass( 'navNext' );
-    };
-
+    
+    const click = () => {
+        // setClassExit('exit-animation')
+        setClassExit(!classExit)
+    }
+            
     useEffect( () =>
     {
         setTimeout( () =>
@@ -20,21 +29,24 @@ const Nav = () =>
         }, 1000 );
     } );
 
+
+
     return (
         <div className={ classname }>
-            <nav>
+            <nav onClick={click} className={classExit? 'exit-animation': ''}>
+
                 <Link to='/Intro' >
                     INTRO
                 </Link>
-                <Link to='/'>
+                <Link to='/Work'>
                     WORK
                 </Link>
 
-                <Link to='/'>
+                <Link to='/About'>
                     ABOUT
                 </Link>
 
-                <Link to='/'>
+                <Link to='/Contact'>
                     CONTACT
                 </Link>
 
