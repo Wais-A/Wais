@@ -5,23 +5,6 @@
     opacity: 0;
     height: 100%;
     visibility: visible;
-
-
-
-    ul {
-        display: -webkit-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        list-style-type: none;
-
-        li {
-            margin: 10px;
-        }
-    }
-
-
-
 }
 
 
@@ -39,27 +22,6 @@
     width: 88%;
     text-shadow: 1px 5px 5px black;
 
-
-
-
-    .ContactInfo {
-        height: 100%;
-        padding: 1% 0;
-    }
-
-
-    ul {
-        display: -webkit-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        list-style-type: none;
-
-        li {
-            margin: 10px;
-        }
-    }
-
     .icon {
         position: absolute;
         left: 90%;
@@ -74,15 +36,16 @@
             height: 40px;
             width: auto;
         }
-
     }
 
     .icon:hover {
         -webkit-transition: .3s;
         transition: .3s;
         color: #00b4dd;
-        // -webkit-transform: rotate(-360deg);
-        // transform: rotate(-360deg);
+    }
 
+    .ContactInfo{
+        font-size: 1.5rem;
+        
     }
 }
