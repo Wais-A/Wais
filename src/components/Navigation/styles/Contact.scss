@@ -20,14 +20,6 @@
         }
     }
 
-    .icon {
-        position: absolute;
-        left: 90%;
-        top: 16%;
-        height: 5%;
-        width: auto;
-        color: white;
-    }
 
 
 }
@@ -52,7 +44,7 @@
 
     .ContactInfo {
         height: 100%;
-        padding-top: 5%;
+        padding: 1% 0;
     }
 
 
@@ -71,10 +63,17 @@
     .icon {
         position: absolute;
         left: 90%;
-        top: 5%;
+        top: 6%;
         height: 50px;
         width: 50px;
         color: white;
+
+        @media screen and (max-width: 500px) {
+            top: 5%;
+            left: 85%;
+            height: 40px;
+            width: auto;
+        }
 
     }
 

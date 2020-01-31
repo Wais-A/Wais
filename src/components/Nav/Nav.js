@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import './Nav.scss';
 
 
@@ -53,21 +53,21 @@ const Nav = (props) => {
     return (
         <div className={`${className} ${navA}`}>
             <nav >
-                <Link to='/Intro' >
+                <NavLink activeClassName='active' to='/Intro' >
                     INTRO
-                </Link>
+                </NavLink>
 
-                <Link to='/Work'>
+                <NavLink activeClassName='active' to='/Work'>
                    WORK
-                </Link>
+                </NavLink>
 
-                <Link to='/About'>
+                <NavLink activeClassName='active' to='/About'>
                     ABOUT
-                </Link>
+                </NavLink>
 
-                <Link to='/Contact'>
+                <NavLink activeClassName='active' to='/Contact'>
                     CONTACT
-                </Link>
+                </NavLink>
                
                 
             </nav>

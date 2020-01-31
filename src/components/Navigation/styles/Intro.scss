@@ -20,16 +20,6 @@
         }
     }
 
-    .icon {
-        position: absolute;
-        left: 90%;
-        top: 16%;
-        height: 5%;
-        width: auto;
-        color: white;
-        opacity: 2 !important;
-
-    }
 
 }
 
@@ -51,7 +41,7 @@
 
     .introInfo {
         height: 100%;
-        padding-top: 5%;
+        padding: 1% 0;
     }
 
 
@@ -74,8 +64,13 @@
         height: 50px;
         width: 50px;
         color: white;
-        
 
+        @media screen and (max-width: 500px) {
+            top: 5%;
+            left: 85%;
+            height: 40px;
+            width: auto;
+        }
     }
 
     .icon:hover {
@@ -85,5 +80,9 @@
         // -webkit-transform: rotate(-360deg);
         // transform: rotate(-360deg);
 
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
     }
 }
