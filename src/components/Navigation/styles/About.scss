@@ -29,14 +29,6 @@
         color: white;
     }
 
-    .icon:hover {
-        -webkit-transition: 1s;
-        transition: 1s;
-        color: rgba(92, 20, 24, 0.562);
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-        ;
-    }
 
 
 
@@ -76,19 +68,20 @@
 
     .icon {
         position: absolute;
-        left: 95%;
-        top: 15%;
-        height: 4%;
-        width: auto;
+        left: 90%;
+        top: 5%;
+        height: 50px;
+        width: 50px;
         color: white;
+
     }
 
     .icon:hover {
-        -webkit-transition: 1s;
-        transition: 1s;
+        -webkit-transition: .3s;
+        transition: .3s;
         color: rgba(94, 162, 252, 0.562);
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-        ;
+        // -webkit-transform: rotate(-360deg);
+        // transform: rotate(-360deg);
+
     }
 }

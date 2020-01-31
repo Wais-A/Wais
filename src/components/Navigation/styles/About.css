@@ -1,4 +1,4 @@
-.intro {
+.About {
   color: white;
   background-color: rgba(255, 255, 255, 0.048);
   visibility: hidden;
@@ -6,17 +6,17 @@
   height: 100%;
   visibility: visible;
 }
-.intro ul {
+.About ul {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
 }
-.intro ul li {
+.About ul li {
   margin: 10px;
 }
-.intro .icon {
+.About .icon {
   position: absolute;
   left: 90%;
   top: 16%;
@@ -24,11 +24,10 @@
   width: auto;
   color: white;
 }
-.introNxt {
+.AboutNxt {
   opacity: 1;
   -webkit-transition-duration: 1.5s;
   transition-duration: 1.5s;
-  transition-delay: 0.5s;
   color: white;
   background-color: rgba(255, 255, 255, 0.048);
   height: 100%;
@@ -36,21 +35,21 @@
   background: rgba(20, 2, 2, 0.376);
   margin: 0 auto;
 }
-.introNxt .introInfo {
+.AboutNxt .AboutInfo {
   height: 100%;
   padding-top: 5%;
 }
-.introNxt ul {
+.AboutNxt ul {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
 }
-.introNxt ul li {
+.AboutNxt ul li {
   margin: 10px;
 }
-.introNxt .icon {
+.AboutNxt .icon {
   position: absolute;
   left: 90%;
   top: 5%;
@@ -58,7 +57,7 @@
   width: 50px;
   color: white;
 }
-.introNxt .icon:hover {
+.AboutNxt .icon:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: rgba(94, 162, 252, 0.562);

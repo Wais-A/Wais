@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaXing } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 import './styles/Work.scss'
@@ -22,7 +22,7 @@ const Work = () =>
     return (
         <div className={ Work }>
             <Link to='/'>
-                <FaXing className='icon' />
+                <AiOutlineClose className='icon' />
             </Link>
             <div className='WorkInfo'>
                 <h1>Hello</h1>
