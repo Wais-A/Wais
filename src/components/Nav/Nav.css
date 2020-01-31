@@ -1,0 +1,82 @@
+.nav nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  padding: 5% 0;
+  font-size: 1rem;
+  opacity: 0;
+}
+.nav nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.classNameAfter {
+  transition: 1s;
+  position: absolute;
+  top: 25%;
+  width: 70.4vw;
+}
+.classNameAfter nav {
+  transition-duration: 0.8s;
+  transition-delay: 0.5s;
+  color: white;
+  padding: 5% 0;
+  font-size: 1rem;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.classNameAfter nav .exit-animation {
+  transition-duration: 1.8s;
+  position: absolute;
+  top: 20%;
+}
+.classNameAfter nav a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.classNameAfter nav a:hover {
+  color: rgba(255, 255, 254, 0.376);
+  transition: 1s;
+}
+.classNameAfter nav a:active {
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px white;
+}
+.afterHome {
+  transition: 1s;
+  position: absolute;
+  top: 1%;
+  width: 70.4vw;
+}
+.afterHome nav {
+  transition-duration: 0.8s;
+  transition-delay: 0.5s;
+  color: white;
+  padding: 5% 0;
+  font-size: 1rem;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.afterHome nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.afterHome nav a:hover {
+  color: rgba(255, 255, 254, 0.376);
+  transition: 1s;
+}
+.afterHome nav a:active {
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px white;
+}

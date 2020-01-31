@@ -48,11 +48,13 @@
     opacity: 1;
     -webkit-transition-duration: 1.5s;
     transition-duration: 1.5s;
-    transition-delay: 2s;
+    transition-delay: .5s;
     color: white;
     background-color: rgba(255, 255, 255, 0.048);
     height: 100%;
     visibility: visible;
+    background: rgba(20, 2, 2, 0.376);
+    margin: 0 auto;
 
 
     .introInfo {
@@ -80,7 +82,7 @@
         height: 50px;
         width: 50px;
         color: white;
-        
+
     }
 
     .icon:hover {
@@ -89,6 +91,6 @@
         color: rgba(94, 162, 252, 0.562);
         // -webkit-transform: rotate(-360deg);
         // transform: rotate(-360deg);
-        
+
     }
 }

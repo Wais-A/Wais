@@ -1,0 +1,72 @@
+.intro {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.048);
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  visibility: visible;
+}
+.intro ul {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.intro ul li {
+  margin: 10px;
+}
+.intro .icon {
+  position: absolute;
+  left: 90%;
+  top: 16%;
+  height: 5%;
+  width: auto;
+  color: white;
+}
+.intro .icon:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: rgba(92, 20, 24, 0.562);
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+.introNxt {
+  opacity: 1;
+  -webkit-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.048);
+  height: 100%;
+  visibility: visible;
+  background: rgba(20, 2, 2, 0.376);
+  margin: 0 auto;
+}
+.introNxt .introInfo {
+  height: 100%;
+  padding-top: 5%;
+}
+.introNxt ul {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.introNxt ul li {
+  margin: 10px;
+}
+.introNxt .icon {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+.introNxt .icon:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: rgba(94, 162, 252, 0.562);
+}

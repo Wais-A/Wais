@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Nav from '../Nav/Nav';
-
 import './styles/Intro.scss'
-const Intro = () =>
+const Intro = (props) =>
 {
 
     const [ intro, setIntro ] = useState( 'intro' );
-
+    
     useEffect( () =>
     {
 
@@ -22,7 +20,7 @@ const Intro = () =>
 
     return (
         <div className={ intro }>
-            <Nav />
+            
             <Link to='/'>
                 <AiOutlineClose className='icon' />
             </Link>

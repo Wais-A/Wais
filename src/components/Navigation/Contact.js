@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaXing } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import Nav from '../Nav/Nav';
 
 import './styles/Contact.scss';
 const Contact = () =>
@@ -22,7 +21,7 @@ const Contact = () =>
 
     return (
         <div className={ Contact }>
-            <Nav />
+           
             <Link to='/'>
                 <FaXing className='icon' />
             </Link>
