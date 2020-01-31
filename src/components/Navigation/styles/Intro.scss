@@ -27,11 +27,9 @@
         height: 5%;
         width: auto;
         color: white;
+        opacity: 2 !important;
+
     }
-
-
-
-
 
 }
 
@@ -43,10 +41,9 @@
     transition-duration: 1.5s;
     transition-delay: .5s;
     color: white;
-    background-color: rgba(255, 255, 255, 0.048);
     height: 100%;
     visibility: visible;
-    background: rgba(20, 2, 2, 0.376);
+    background: rgba(110, 5, 5, 0.322);
     margin: 0 auto;
 
 
@@ -81,7 +78,7 @@
     .icon:hover {
         -webkit-transition: .3s;
         transition: .3s;
-        color: rgba(94, 162, 252, 0.562);
+        color: #00b4dd;
         // -webkit-transform: rotate(-360deg);
         // transform: rotate(-360deg);
 

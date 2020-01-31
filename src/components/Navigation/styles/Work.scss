@@ -27,9 +27,8 @@
         height: 5%;
         width: auto;
         color: white;
+        opacity: 2 !important;
     }
-
-
 
 }
 
@@ -78,7 +77,7 @@
     .icon:hover {
         -webkit-transition: .3s;
         transition: .3s;
-        color: rgba(94, 162, 252, 0.562);
+        color: #00b4dd;
         // -webkit-transform: rotate(-360deg);
         // transform: rotate(-360deg);
 
