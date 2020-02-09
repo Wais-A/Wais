@@ -1,0 +1,57 @@
+body .container {
+  margin: 5% 5%;
+  border: 5px double white;
+  border-width: 2px 0px;
+  height: 0px;
+  width: 88%;
+  opacity: 0;
+  padding: 0;
+  margin-top: 30px;
+  background: black;
+}
+
+body .name {
+  opacity: 0;
+  color: white;
+}
+
+body .App {
+  background: rgba(255, 255, 255, 0);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.open {
+  -webkit-transition: 1.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 20px 0;
+  border: 5px solid white;
+  margin: 0 auto;
+  border-width: 2px 0px;
+  height: 85px;
+  width: 88%;
+  background: rgba(20, 2, 2, 0.246);
+  margin: 0 auto;
+}
+
+.open .name {
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  opacity: 1;
+  color: white;
+  text-shadow: 1px 5px 5px black;
+}
+
+body {
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2020/01/08/paint-liquid-abstract--k-wallpaper.jpg);
+  height: 89.5vh;
+  padding-top: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=HomePage.css.map */

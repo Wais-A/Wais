@@ -46,17 +46,10 @@
     }
 
 
-    ul {
-        display: -webkit-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        list-style-type: none;
-
-        li {
-            margin: 10px;
-        }
-    }
+   h1{
+       text-decoration: none;
+       color: white;
+   }
 
     .icon {
         position: absolute;

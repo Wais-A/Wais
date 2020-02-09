@@ -21,19 +21,7 @@
                 }
         }
 
-        @media screen and (max-width: 500px) {
-                top: 180px;
-                margin: 0 auto;
-
-                nav {
-                        justify-content: space-between;
-                }
-
-                nav a {
-                        font-size: 1rem;
-                        margin: 0 3px;
-                }
-        }
+       
 
 
 }
@@ -53,8 +41,8 @@
                 opacity: 1;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
                 text-shadow: 1px 1.2px 0px grey;
+                justify-content: space-between;
 
                 a {
 
@@ -115,7 +103,6 @@
                 opacity: 1;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
                 font-size: 1.5rem;
 
 
@@ -142,7 +129,8 @@
         }
 
         @media screen and (max-width: 500px) {
-                top: 0%
+                top: 0%;
+                // margin: 0 auto
         }
 }
 

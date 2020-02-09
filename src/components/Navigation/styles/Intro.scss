@@ -44,17 +44,9 @@
         padding: 1% 0;
     }
 
-
-    ul {
-        display: -webkit-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        list-style-type: none;
-
-        li {
-            margin: 10px;
-        }
+    .link{
+        text-decoration: none;
+        color: white;
     }
 
     .icon {

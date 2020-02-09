@@ -38,17 +38,38 @@
         }
     }
 
-    .icon:hover {
-        -webkit-transition: .3s;
-        transition: .3s;
-        color: #00b4dd;
+
+    .linkedin {
+        color: #0077b5;
+        background: white;
+        height: 50px;
+        width: auto;
+        outline: 10px solid #0077b5;
+        outline-offset: -10px;
     }
 
-    .ContactInfo{
-        font-size: 1.5rem;
-        @media screen and (max-width: 500px){
-            font-size: 1rem;
-        }
+    .Twitter {
+        color: white;
+        height: 50px;
+        width: auto;
+        margin-left: 20px;
         
     }
+
+
+
+.icon:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #00b4dd;
+}
+
+.ContactInfo {
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 500px) {
+        font-size: 1rem;
+    }
+
+}
 }
