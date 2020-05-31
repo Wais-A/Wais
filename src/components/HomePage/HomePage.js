@@ -20,7 +20,7 @@ const HomePage = () =>
     return (
         <div className={ classname }>
             <h1 className='name'>Wais Almakaleh</h1>
-            
+
         </div>
     );
 

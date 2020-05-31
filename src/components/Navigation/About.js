@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
@@ -6,22 +6,9 @@ import './styles/About.scss';
 const About = () =>
 {
 
-    const [ About, setAbout ] = useState( 'About' );
-
-    useEffect( () =>
-    {
-
-
-        setTimeout( () =>
-        {
-            setAbout( 'AboutNxt' );
-        }, 500 );
-
-    } );
-
     return (
-        <div className={ About }>
-          
+        <div className={ 'AboutNxt' }>
+
             <Link to='/'>
                 <AiOutlineClose className='icon' />
             </Link>

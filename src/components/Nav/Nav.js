@@ -4,75 +4,72 @@ import './Nav.scss';
 
 
 
-const Nav = (props) => {
-   
-
-    const [ className, setClass ] = useState( 'nav' );
-    const [ pathAfterHome, setPathAfterHome ] = useState('');
-    const [navA, setNavA] = useState('')
-
-    useEffect( () => {
-        
-        setTimeout( () => {
-            setClass( 'classNameAfter' );
-            
-
-        }, 1000 );
+const Nav = ( props ) =>
+{
 
 
-        setPathAfterHome(window.location.pathname)
+  const [ className, setClass ] = useState( 'nav' );
+  const [ pathAfterHome, setPathAfterHome ] = useState( '' );
+  const [ navA, setNavA ] = useState( '' );
 
-      
-             if (pathAfterHome === '/Intro' ||
-                pathAfterHome === '/Work' ||
-                pathAfterHome === '/About' ||
-                pathAfterHome === '/Contact'
-                    ) 
-             {
-            setNavA('afterHome')
-            }else{
-                setNavA('')
-            }
-          
+  let history = useHistory();
+  useEffect( () => {
+      setPathAfterHome( history.location.pathname );
+
+      window.addEventListener('click', ()=>{
+      setPathAfterHome( history.location.pathname );
+    })
+  
+    pathAfterHome !== '/' && pathAfterHome !== ' ' && pathAfterHome !== '' ? setNavA('afterHome'): setNavA('')
+
+ 
+  }, [ pathAfterHome, history.location.pathname]);
 
 
-    });
 
-    const history = useHistory()
+  //  console.log(pathAfterHome)
+  //   if ( pathAfterHome === '/Intro' ||
+  //     pathAfterHome === '/Work' ||
+  //     pathAfterHome === '/About' ||
+  //     pathAfterHome === '/Contact'
+  //   )
+  //   {
+  //     setNavA( 'afterHome' );
+  //   } else
+  //   {
+  //     setNavA( '' );
+  //   }
 
-    const click = () => {
-        history.push('/work')
-    }
+  setTimeout(() => {
+    setClass( 'classNameAfter')
+  }, 1000);
 
-    
-    // console.log(navA)
-    // console.log(pathAfterHome)
+  return (
+    <div className={ `${ className} ${navA}` }>
+      <nav >
+        <NavLink activeClassName='active' to='/Intro' >
+          INTRO
+        </NavLink>
 
-        
+        <NavLink activeClassName='active' to='/Work'>
+          WORK
+        </NavLink>
 
-    return (
-        <div className={`${className} ${navA}`}>
-            <nav >
-                <NavLink activeClassName='active' to='/Intro' >
-                    INTRO
-                </NavLink>
+        <NavLink activeClassName='active' to='/About'>
+          ABOUT
+        </NavLink>
 
-                <NavLink activeClassName='active' to='/Work'>
-                   WORK
-                </NavLink>
+        <NavLink activeClassName='active' to='/Contact'>
+          CONTACT
+        </NavLink>
 
-                <NavLink activeClassName='active' to='/About'>
-                    ABOUT
-                </NavLink>
 
-                <NavLink activeClassName='active' to='/Contact'>
-                    CONTACT
-                </NavLink>
-               
-                
-            </nav>
-        </div>
-    );
+      </nav>
+    </div>
+  );
 };
 
 export default Nav;
+
+
+

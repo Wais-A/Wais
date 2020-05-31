@@ -1,28 +1,18 @@
 import './styles/Contact.scss';
 
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import {FaLinkedin} from 'react-icons/fa'
-import { FaTwitter} from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+
+
+
 const Contact = () =>
 {
 
-    const [ Contact, setContact ] = useState( 'Contact' );
-
-    useEffect( () =>
-    {
-
-
-        setTimeout( () =>
-        {
-            setContact( 'ContactNxt' );
-        }, 500 );
-
-    } );
-
     return (
-        <div className={ Contact }>
+        <div className={ 'ContactNxt' }>
 
             <Link to='/'>
                 <AiOutlineClose className='icon' />
