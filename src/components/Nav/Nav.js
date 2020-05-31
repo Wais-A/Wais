@@ -7,38 +7,28 @@ import './Nav.scss';
 const Nav = ( props ) =>
 {
 
-
+  // className is a class that lest the nav slowly come in
   const [ className, setClass ] = useState( 'nav' );
+  // pathafterhome compares the url and allows the nav to flow up
   const [ pathAfterHome, setPathAfterHome ] = useState( '' );
+  // navA sets a classname to the navBar
   const [ navA, setNavA ] = useState( '' );
 
   let history = useHistory();
   useEffect( () => {
+      // sets the url
       setPathAfterHome( history.location.pathname );
 
+      // I couldn't get useEffect to work without doing this
       window.addEventListener('click', ()=>{
       setPathAfterHome( history.location.pathname );
     })
-  
+    // compares the url, url is sometimes just an empty string and sometimes a string with a space in it, idk why...
     pathAfterHome !== '/' && pathAfterHome !== ' ' && pathAfterHome !== '' ? setNavA('afterHome'): setNavA('')
 
- 
+  //removes warnings and allows the useEffedt ot only render when these two change
   }, [ pathAfterHome, history.location.pathname]);
 
-
-
-  //  console.log(pathAfterHome)
-  //   if ( pathAfterHome === '/Intro' ||
-  //     pathAfterHome === '/Work' ||
-  //     pathAfterHome === '/About' ||
-  //     pathAfterHome === '/Contact'
-  //   )
-  //   {
-  //     setNavA( 'afterHome' );
-  //   } else
-  //   {
-  //     setNavA( '' );
-  //   }
 
   setTimeout(() => {
     setClass( 'classNameAfter')
