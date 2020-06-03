@@ -32,7 +32,7 @@ const Nav = ( props ) =>
 
   setTimeout(() => {
     setClass( 'classNameAfter')
-  }, 1000);
+  }, 1300);
 
   return (
     <div className={ `${ className} ${navA}` }>
