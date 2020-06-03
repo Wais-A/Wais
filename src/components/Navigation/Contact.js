@@ -18,7 +18,7 @@ const Contact = () =>
                 <AiOutlineClose className='icon' />
             </Link>
             <div className='ContactInfo'>
-                <h1>For Business Inquiries</h1>
+                <h1>For Inquiries</h1>
                 <h3>WaisAlmakaleh@gmail.com</h3>
                 <h3>(917)690-6292</h3>
                 <a href='https://www.linkedin.com/in/wais-almakaleh-43707a158/' target='_blank#'>

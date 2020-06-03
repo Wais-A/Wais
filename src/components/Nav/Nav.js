@@ -37,9 +37,9 @@ const Nav = ( props ) =>
   return (
     <div className={ `${ className} ${navA}` }>
       <nav >
-        <NavLink activeClassName='active' to='/Intro' >
+        {/* <NavLink activeClassName='active' to='/Intro' >
           INTRO
-        </NavLink>
+        </NavLink> */}
 
         <NavLink activeClassName='active' to='/Work'>
           WORK
