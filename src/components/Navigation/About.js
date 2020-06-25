@@ -3,9 +3,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 import './styles/About.scss';
-const About = () =>
-{
-
+const About = () =>{
+    
     return (
         <div className={ 'AboutNxt' }>
 
