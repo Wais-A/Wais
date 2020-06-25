@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import "./Nav.scss";
-
 const Nav = (props) => {
 	const history = useHistory();
 	const path = history.location.pathname;
 	const [className, setClass] = useState("nav");
 	const [pathAfterHome] = useState(path);
 	const [navA, setNavA] = useState("");
-
 	useEffect(() => {
 		history.listen((location) => {
 			location.pathname !== "/" &&
@@ -17,11 +15,13 @@ const Nav = (props) => {
 				? setNavA("afterHome")
 				: setNavA("");
 		});
+		path !== "/" && path !== " " && path !== ""
+			? setNavA("afterHome")
+			: setNavA("");
 	}, [pathAfterHome, path, history]);
 	setTimeout(() => {
 		setClass("classNameAfter");
 	}, 1300);
-
 	return (
 		<div className={`${className} ${navA}`}>
 			<nav>
