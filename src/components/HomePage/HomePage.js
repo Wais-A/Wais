@@ -9,6 +9,7 @@ const HomePage = () =>
     useEffect( () =>
     {
 
+            
 
         setTimeout( () =>
         {
@@ -16,7 +17,6 @@ const HomePage = () =>
         }, 1000 );
 
     } );
-
     return (
         <div className={ classname }>
             <h1 className='name'>Wais Almakaleh</h1>
