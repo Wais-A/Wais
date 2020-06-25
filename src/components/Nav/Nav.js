@@ -11,7 +11,6 @@ const Nav = (props) => {
 
 	useEffect(() => {
 		history.listen((location) => {
-			console.log(location);
 			location.pathname !== "/" &&
 			location.pathname !== " " &&
 			location.pathname !== ""
