@@ -1,12 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import "./Nav.scss";
-const Nav = (props) => {
+import "./NavigationBar.scss";
+const Nav = () => {
 	const history = useHistory();
 	const path = history.location.pathname;
 	const [className, setClass] = useState("nav");
 	const [pathAfterHome] = useState(path);
 	const [navA, setNavA] = useState("");
+	const [barStyle, setBarStyle] = useState('')
+
+	useLayoutEffect(()=>{
+		window.addEventListener('scroll', ()=> {
+			window.scrollY >= 65 ? setBarStyle('Scrolling') : setBarStyle('')
+		})
+		
+		
+	})
+	
 	useEffect(() => {
 		history.listen((location) => {
 			location.pathname !== "/" &&
@@ -19,12 +29,13 @@ const Nav = (props) => {
 			? setNavA("afterHome")
 			: setNavA("");
 	}, [pathAfterHome, path, history]);
+
 	setTimeout(() => {
 		setClass("classNameAfter");
 	}, 1300);
 	return (
 		<div className={`${className} ${navA}`}>
-			<nav>
+			<nav className= {`${barStyle}`}>
 				<NavLink activeClassName="active" to="/Work">
 					WORK
 				</NavLink>

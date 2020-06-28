@@ -1,0 +1,59 @@
+body {
+	.container {
+		margin: 5% 5%;
+		border: 5px double white;
+		border-width: 2px 0px;
+		height: 0px;
+		width: 88%;
+		opacity: 0;
+		padding: 0;
+		margin-top: 30px;
+		background: black;
+	}
+
+	.name {
+		opacity: 0;
+		color: white;
+	}
+
+	.App {
+		background: rgba(255, 255, 255, 0);
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+.open {
+	-webkit-transition: 1.5s;
+	transition: 0.5s;
+	padding: 20px 0;
+	border: 5px solid white;
+	margin: 0 auto;
+	border-width: 2px 0px;
+	height: 85px;
+	width: 88%;
+	backdrop-filter: saturate(180%) blur(20px);
+	background-color: rgba(255, 255, 255, 0.288);
+	margin: 0 auto;
+
+	.name {
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+		-webkit-transition-delay: 0.3s;
+		transition-delay: 0.3s;
+		opacity: 1;
+		color: white;
+		text-shadow: 1px 5px 5px black;
+		@media screen and (max-width: 500px) {
+			margin-top: 0;
+		}
+	}
+}
+
+body {
+	padding-top: 10%;
+	background-size: auto;
+	background-attachment: fixed;
+	scroll-behavior: unset;
+	
+}
