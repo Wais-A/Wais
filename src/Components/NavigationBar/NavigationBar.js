@@ -11,7 +11,7 @@ const Nav = () => {
 
 	useLayoutEffect(()=>{
 		window.addEventListener('scroll', ()=> {
-			window.scrollY >= 65 ? setBarStyle('Scrolling') : setBarStyle('')
+			window.scrollY >= 65 ? setBarStyle('Scrolling') : setBarStyle('nav')
 		})
 		
 		
