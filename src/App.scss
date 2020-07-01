@@ -1,20 +1,35 @@
 // html {
-//   height: 100%;
-//   width: 100%;
-//   margin: 0;
-
+// 	width: 100vw;
+// 	height: 100%;
+// 	box-sizing: border-box;
+// 	text-align: center;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	position: relative;
 // }
 
-body, html {
-  background-image: url('./Assets/liquid.jpg');
-  width: 100vw;
-  height: 100%;
-  min-height: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
+// body {
+// 	// background-image: url("./Assets/liquid.jpg");
+// 	width: 100vw;
+// 	min-height: 100%;
+// 	box-sizing: border-box;
+// 	text-align: center;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	position: relative;
+// }
+
+
+body,
+#root::before {
+	background-image: url("./Assets/liquid.jpg");
+	width: 100vw;
+	min-height: 100vh;
+	box-sizing: border-box;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: sticky;
 }
+
 
